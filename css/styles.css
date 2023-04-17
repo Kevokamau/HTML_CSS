@@ -1,5 +1,5 @@
 
- 
+*{transition:all 0.3s ease-in-out;}
 
 body {
     background-color: #efe9e9;
@@ -78,4 +78,14 @@ body {
     padding: 10px;
 
 
+   }
+
+   .header-img {
+    background: linear-gradient(
+        #0103269a, #0103267b
+    ), url(/images/mw2-beta-hero.jpg);
+    width: auto;
+    min-height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
    }
