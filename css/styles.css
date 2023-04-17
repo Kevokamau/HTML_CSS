@@ -17,6 +17,8 @@ body {
    nav {
     position:absolute;
     background: #010326;
+    max-width: 100%;
+    float: right;
    }
 
    nav, #menu-checkbox {
@@ -34,6 +36,7 @@ body {
     font-weight: 600;
     color: #efe9e9;
     padding: 10px 20px;
+    
    }
 
    @media (min-width: 600px){
@@ -47,12 +50,32 @@ body {
 
     
        nav a {
-        display: inline;
+       display: inline-block;
        padding: 20px 20px;
+       font-size: 19px;
+       font-weight: 600;
+       text-decoration: none;
+       
        }
 
-       nav {
-        padding: 20px 20px;
+       nav a:hover {
+        color: #F8133C;
+        text-decoration: underline;
        }
+
+       
    }
    
+   .logo {
+    max-width: 120px;
+    float: left;
+   }
+
+   .menu-container {
+    clear: both;
+    overflow: auto;
+    background: #010326;
+    padding: 10px;
+
+
+   }
