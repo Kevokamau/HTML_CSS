@@ -9,3 +9,50 @@ body {
    h1, h2, h3, h4, h5, h6 {
     font-family:'Syne', sans-serif ;
    }
+
+   header {
+    position:relative;
+   }
+
+   nav {
+    position:absolute;
+    background: #010326;
+   }
+
+   nav, #menu-checkbox {
+    display: none;
+   }
+
+   #menu-checkbox:checked ~ nav {
+    display: block;
+   }
+
+
+   nav a {
+    display: block;
+    font-family:'Syne', sans-serif ;
+    font-weight: 600;
+    color: #efe9e9;
+    padding: 10px 20px;
+   }
+
+   @media (min-width: 600px){
+    nav {
+        display: block;
+        position: static;
+    }
+    .hamburger-icon {
+        display: none;
+       }
+
+    
+       nav a {
+        display: inline;
+       padding: 20px 20px;
+       }
+
+       nav {
+        padding: 20px 20px;
+       }
+   }
+   
