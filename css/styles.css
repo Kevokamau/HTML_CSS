@@ -2,9 +2,24 @@
 *{transition:all 0.3s ease-in-out;}
 
 body {
-    background-color: #efe9e9;
+    background-color: #e7e6e6;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    display: grid;
+    grid-gap: 1em;
+    min-height: 100vh;
+    grid-template-areas:
+    'header' 
+    'main'
+    'footer'
+    ;
+
    }
+   header, main, aside, footer {
+    background: white;
+  }
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
 
    h1, h2, h3, h4, h5, h6 {
     font-family:'Syne', sans-serif ;
