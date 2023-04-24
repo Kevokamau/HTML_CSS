@@ -1,5 +1,5 @@
 
-*{transition:all 0.3s ease-in-out;}
+*{transition:all 0.4s ease-in-out;}
 
 body {
     background-color: #e7e6e6;
@@ -14,18 +14,20 @@ body {
     ;
 
    }
+
    header, main, aside, footer {
     background: white;
   }
+
 header{grid-area: header;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 
-   h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family:'Syne', sans-serif ;
    }
 
-   header {
+header {
     position:relative;
    }
 
@@ -54,6 +56,12 @@ footer{grid-area: footer;}
     
    }
 
+.container {
+    display: grid;
+  }
+
+/* Start Media*/
+
    @media (min-width: 600px){
     nav {
         display: block;
@@ -81,6 +89,8 @@ footer{grid-area: footer;}
        
    }
    
+/* End of Media */
+
    .logo {
     max-width: 120px;
     float: left;
