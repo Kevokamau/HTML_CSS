@@ -3,24 +3,25 @@
 
 
 /* Body Settings */
+
 body {
-    background-color: #e7e6e6;
+    
     font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #9c9c9c;
     display: grid;
-    grid-gap: 1em;
-    min-height: 100vh;
     size: auto;
     grid-template-areas:
     'header' 
     'main'
     'footer'
     ;
-
    }
+
+  
 
    /* End of Body Settings */
 
-   header, main, aside, footer {
+   header, main, footer {
     background: white;
   }
 
@@ -61,10 +62,14 @@ header {
     
    }
 
+   
+
    /* Games Grid Area */
-main.product-container {
-    display: grid;
-    gap: 1rem;
+
+.product-container {
+    display: grid; 
+    padding: 2rem; 
+    gap: 2rm;
     grid-auto-columns: 1fr;
     grid-template-areas: 
     'game-title'
@@ -76,20 +81,31 @@ main.product-container {
     'game-6'
     ;
   }
-
-  
-
   .product-container:nth-child(1) {
     grid-area: game-1;
   }
-
   .product-container:nth-child(2) {
-    grid-area: game-1;
+    grid-area: game-2;
   }
+  .product-container:nth-child(3) {
+    grid-area: game-3;
+  }
+  .product-container:nth-child(4) {
+    grid-area: game-4;
+  }
+  .product-container:nth-child(5) {
+    grid-area: game-5;
+  }
+  .product-container:nth-child(6) {
+    grid-area: game-6;
+    padding: 10em;
+  }
+
+  
 
 /* Start Media*/
 
-   @media (min-width: 600px){
+   @media (min-width: 50em){
     nav {
         display: block;
         position: static;
@@ -112,10 +128,12 @@ main.product-container {
         color: #F8133C;
         text-decoration: underline;
        }
-.product-container { grid-template-areas: 
-'game-title'
-'game-1 game-2 game-3'
-'game-4'
+
+       
+.product-container { 
+    grid-template-areas: 
+    'game-title'
+    'game-1 game-2 game-3 game-4 game 5 game-6'
 ;
 } 
 
@@ -126,6 +144,13 @@ main.product-container {
    .logo {
     max-width: 120px;
     float: left;
+   }
+
+   .game-image {
+    max-width: 120px;
+    display: flex ;
+
+
    }
 
    .menu-container {
