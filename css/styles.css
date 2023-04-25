@@ -1,12 +1,15 @@
 
 *{transition:all 0.4s ease-in-out;}
 
+
+/* Body Settings */
 body {
     background-color: #e7e6e6;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: grid;
     grid-gap: 1em;
     min-height: 100vh;
+    size: auto;
     grid-template-areas:
     'header' 
     'main'
@@ -14,6 +17,8 @@ body {
     ;
 
    }
+
+   /* End of Body Settings */
 
    header, main, aside, footer {
     background: white;
@@ -56,8 +61,30 @@ header {
     
    }
 
-.container {
+   /* Games Grid Area */
+main.product-container {
     display: grid;
+    gap: 1rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'game-title'
+    'game-1'
+    'game-2'
+    'game-3'
+    'game-4'
+    'game-5'
+    'game-6'
+    ;
+  }
+
+  
+
+  .product-container:nth-child(1) {
+    grid-area: game-1;
+  }
+
+  .product-container:nth-child(2) {
+    grid-area: game-1;
   }
 
 /* Start Media*/
@@ -85,8 +112,13 @@ header {
         color: #F8133C;
         text-decoration: underline;
        }
+.product-container { grid-template-areas: 
+'game-title'
+'game-1 game-2 game-3'
+'game-4'
+;
+} 
 
-       
    }
    
 /* End of Media */
