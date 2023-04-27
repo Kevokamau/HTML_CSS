@@ -35,13 +35,19 @@ body {
   }
 
   .nav {
+    
     padding: 1rem 1rem;
     background: #010326;
     width: max-content;
    }
 
-   
+   nav, #menu-checkbox {
+    display: none;
+   }
 
+   #menu-checkbox:checked ~ nav {
+    display: block;
+   }
 
 
    .container {
@@ -55,9 +61,64 @@ body {
     
   }
 
-  
+  .hamburger-icon {
+    background-color: aliceblue;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+  }
 
+  .hero-img {
+    background: linear-gradient(
+        #0103269a, #0103267b
+    ), url(/images/mw2-beta-hero.jpg);
+    position: relative;
+    background-position: center;
+    width: auto;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   }
 
+   .hero-text {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+  @media (min-width: 600px){
+    nav {
+        display: block;
+        position: static;
+    }
+    .hamburger-icon {
+        display: none;
+       }
+
+    
+       .nav a {
+       display: inline-block;
+       padding: 20px 20px;
+       font-size: 19px;
+       font-weight: 600;
+       text-decoration: none;
+       color: aliceblue;
+       
+       }
+
+       .nav a:hover {
+        color: #F8133C;
+        text-decoration: underline;
+       }
+
+       .logo {
+        max-width: 120px;
+        float: left;
+       } 
+      }
 
    /* .sub-footer {
     display: flex;
@@ -89,10 +150,7 @@ body {
    /* End of Body Settings */
 
  
-   nav, #menu-checkbox {
-    display: none;
-   }
-
+  
 
 
 /* header {
@@ -106,21 +164,13 @@ body {
     float: right;
    }
 
-   nav, #menu-checkbox {
-    display: none;
-   }
+  
 
    #menu-checkbox:checked ~ nav {
     display: block;
    }
 
 
-   nav a {
-    display: block;
-    font-family:'Syne', sans-serif ;
-    font-weight: 600;
-    color: #efe9e9;
-    padding: 10px 20px;
     
    } */
 
@@ -132,36 +182,7 @@ body {
 
 /* Start Media*/
 
-  @media (min-width: 50em){
-    nav {
-        display: block;
-        position: static;
-    }
-    .hamburger-icon {
-        display: none;
-       }
-
-    
-       .nav a {
-       display: inline-block;
-       padding: 20px 20px;
-       font-size: 19px;
-       font-weight: 600;
-       text-decoration: none;
-       color: aliceblue;
-       
-       }
-
-       .nav a:hover {
-        color: #F8133C;
-        text-decoration: underline;
-       }
-
-       .logo {
-        max-width: 120px;
-        float: left;
-       } 
-      }
+  
     
       
      
@@ -184,6 +205,7 @@ body {
    } */
 
    /* .header-img {
+    display: flex;
     background: linear-gradient(
         #0103269a, #0103267b
     ), url(/images/mw2-beta-hero.jpg);
@@ -191,4 +213,5 @@ body {
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
+    
    } */
