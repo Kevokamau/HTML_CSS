@@ -6,23 +6,16 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-  
-    grid-template-areas:
-    'hd hd hd hd hd hd hd hd' 
-    'mn mn mn mn mn mn mn mn'
-    'sb sb sb sb sb sb sb sb'
-    'ft ft ft ft ft ft ft ft'
+    
+    
     ;
-   min-height: 100vh;
-   gap: 1rem;
 
    }
 
    .el {
     background-color: aquamarine;
     color: #F8133C;
+    
     place-content: center;
    }
 
@@ -33,12 +26,13 @@ body {
 
    .sub-footer {
     grid-area: sb;
+    
     background-color: rgb(20, 51, 51);
    }
 
    .footer {
     grid-area: ft;
-    display: grid;
+    
     background-color: #010326;
    }
 
@@ -46,20 +40,28 @@ body {
     background-color: #010326;
     color: #F8133C;
     padding: 0.5rem;
+    
   }
 
   .container {
     grid-area: mn;
-    min-height: 100px;
+    min-height: 200px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: minmax(100px, auto);
     gap: 1rem;
+    
   }
 
   .card:first-child {
     background-color: #392e30;
-    grid-column: 1/8;
+   grid-column: 1 / 9;
+   place-content: center;
+    
+  }
+
+  .card:nth-child(2){
+    background-color: purple;
   }
 
    /* End of Body Settings */
@@ -133,14 +135,6 @@ h1, h2, h3, h4, h5, h6 {
        }
 
        
-.product-container { 
-    grid-template-areas: 
-    'game'
-    'game game game game game game'
-;
-} 
-
-   }
    
 /* End of Media */
 
@@ -150,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .game-image {
-    max-width: 120px;x
+    max-width: 120px;
 
    }
 
@@ -159,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto;
     background: #010326;
     padding: 10px;
-
 
    }
 
@@ -172,3 +165,4 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-repeat: no-repeat;
    }
+}
