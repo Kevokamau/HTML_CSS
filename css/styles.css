@@ -13,13 +13,19 @@ body {
     font-family:'Syne', sans-serif ;
    }
    
-   /* .header {
-    background-color: rgb(255, 255, 255);
-    } */
-   
+   .headline {
+    font-size: 3rem;
+    color: #F2E203;
+
+
+
+   }
     
   
-  
+  .btn {
+    font-weight: 500;
+
+  }
 
    .menu-container {
     background-color: #010326;
@@ -68,6 +74,7 @@ body {
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 2rem;
     
    }
 
@@ -80,11 +87,27 @@ body {
    }
 
    .bg-color {
-    background-color: #F2E203;
-    padding-top: 5rem;
-
-
+    background: linear-gradient(
+      #f2e203ce, #f2e203d2
+  ), url(/images/javier-martinez-hUD0PUczwJQ-unsplash.jpg);
+  position: relative;
+  background-position: center;
+  width: auto;
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+    
    }
+
+   .hero-btn {
+    border: 1px solid #F8133C;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: none;
+    min-width: 150px;
+    font-size: 18px;
+   }
+
 
    .container {
     display: flex;
@@ -92,13 +115,28 @@ body {
     gap: 1rem;
     align-content: center;
     justify-content: center;
-    margin-top: 1rem;
+    
     padding: 1rem;
     
   }
 
+  .card {
+    display: grid;
+    padding-top: 50px;
+  }
+
   .game-img {
     max-width: 150px;
+  }
+
+  .price {
+    font-size: 2rem;
+    color: #F2E203;
+    background-color: #F8133C;
+    max-width: 80px;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
   }
 
    
