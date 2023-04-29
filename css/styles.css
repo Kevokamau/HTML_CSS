@@ -5,14 +5,14 @@
 /* Body Settings */
 
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif; 
-    
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
    }
 
    h1, h2, h3, h4, h5, h6 {
     font-family:'Syne', sans-serif ;
    }
-   
+
    .headline {
     font-size: 3rem;
     color: #F2E203;
@@ -20,8 +20,8 @@ body {
 
 
    }
-    
-  
+
+
   .btn {
     font-weight: 500;
     display: inline-block;
@@ -29,8 +29,8 @@ body {
     color: #F2E203;
     border: 1px solid #F2E203;
     text-align: center;
-  
-    
+
+
 
   }
 
@@ -45,19 +45,19 @@ body {
     justify-content: space-between;
    }
 
-  
+
 
    .logo {
     max-width: 100px;
-  
+
   }
 
   .nav {
-    
+
     padding: 1rem 1rem;
     background: #010326;
     width: max-content;
-  
+
    }
 
    nav, #menu-checkbox {
@@ -87,7 +87,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 2rem;
-    
+
    }
 
    .hero-text {
@@ -109,7 +109,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
-    
+
    }
 
    .hero-btn {
@@ -127,12 +127,22 @@ body {
 
    }
 
-   .title {
+   .flex {
+
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-background-color: #010326;
-padding: 10px;
+    flex-wrap: wrap;
+
+
+   }
+
+   .title {
+    justify-content: flex-start;
+    /* display: flex;
+    align-items: center;
+    flex-wrap: wrap; */
+  background-color: #010326;
+  padding: 10px;
 color: aliceblue;
 max-width: 60%;
 border-bottom: #F8133C;
@@ -145,22 +155,23 @@ margin: 30px 0px 30px 0px;
 
    }
 
+   .title h2 {
+    padding-right: 30px;
+
+
+   }
    .icon {
 color: #F8133C;
 font-size: 25px;
-padding-left: 20px;
+
 
    }
 
 
    .container {
-    display: flex;
-    gap: 1rem;
-    align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 1rem;
-    
+    gap: 1rem;
   }
 
   .card {
@@ -170,13 +181,13 @@ padding-left: 20px;
     gap: 2rem;
     border-radius: 5%;
     position: relative;
-  
+
   }
 
   .game-img {
     width: 150px;
     margin-bottom: -50px;
-    
+
   }
 
   .disc-price {
@@ -184,8 +195,8 @@ padding-left: 20px;
     color: #F2E203;
     margin-top: -50px;
     margin-bottom: 0px;
-    
-    
+
+
   }
 
   .full-price {
@@ -196,19 +207,42 @@ padding-left: 20px;
 
   }
 
- 
+
 
  .price {
     background-color: #F8133C;
     border-radius: 10%;
-    
-  } 
+
+  }
 
   .price:hover {
     background-color: #010326;
   }
 
-   
+  .sub-footer {
+gap: 20px;
+   background-color:#010326;
+    color: aliceblue;
+    min-height: 200px;
+   }
+
+   .tag-btn {
+  
+    color:antiquewhite ;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #F2E203;
+    border-radius: 5px;
+    padding:10px 20px 10px 20px;
+    background-color: #0F745D;
+   }
+
+   .tag-btn:hover {
+    background-color: #174f42;
+    font-weight: 600;
+   }
+
+
 
    /* MEDIA START */
 
@@ -221,7 +255,7 @@ padding-left: 20px;
         display: none;
        }
 
-    
+
        .nav a {
        display: inline-block;
        padding: 20px 20px;
@@ -229,7 +263,7 @@ padding-left: 20px;
        font-weight: 600;
        text-decoration: none;
        color: aliceblue;
-       
+
        }
 
        .nav a:hover {
@@ -240,7 +274,7 @@ padding-left: 20px;
        .logo {
         max-width: 120px;
         float: left;
-       } 
+       }
 
        .container {
         flex-direction: row;
@@ -249,18 +283,15 @@ padding-left: 20px;
 
       /* MEDIA ENDS */
 
-   /* .sub-footer {
-    display: flex;
-    background-color: rgb(20, 51, 51);
-   } */
+  
 
-   
 
-  /* 
+
+  /*
 
   .card:first-child {
    background-color: none;
-    
+
   }
   .card:nth-child(2){
     background-color: purple;
@@ -272,8 +303,8 @@ padding-left: 20px;
 
    /* End of Body Settings */
 
- 
-  
+
+
 
 
 /* header {
@@ -287,31 +318,31 @@ padding-left: 20px;
     float: right;
    }
 
-  
+
 
    #menu-checkbox:checked ~ nav {
     display: block;
    }
 
 
-    
+
    } */
 
-   
+
 
    /* Games Grid Area */
 
-  
+
 
 /* Start Media*/
 
-  
-    
-      
-     
 
-       
-   
+
+
+
+
+
+
 /* End of Media */
 
 /* .game-image {
@@ -336,5 +367,5 @@ padding-left: 20px;
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
    } */
