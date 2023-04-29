@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-
+margin: 0px;
    }
 
    h1, h2, h3, h4, h5, h6 {
@@ -30,6 +30,12 @@ body {
     border: 1px solid #F2E203;
     text-align: center;
 
+
+
+  }
+
+  .btn:hover {
+    background-color: #010326;
 
 
   }
@@ -295,6 +301,40 @@ font-size: 25px;
       .newsletter {
 
         min-height: 300px;
+        
+      }
+
+      .form {
+        margin-left: 50px;
+        min-height: 50px;
+        min-width: 300px;
+        border-radius: 5px;
+        background-color: #e2e2e4;
+        margin-right: 30px;
+        border: #949494 solid 1px;
+        margin-bottom: 20px;
+      
+      }
+
+      .form-btn {
+        padding: 16px 50px;
+        background-color: #F8133C;
+        border-radius: 5px;
+        margin-top: 10px;
+
+        
+      }
+
+      .footer {
+       justify-content: center;
+      align-content: space-around;
+      gap: 30px;
+
+        min-height: 400px;
+        background-color: #010326;
+        color: #e2e2e4;
+
+
       }
 
       /* MEDIA ENDS */
