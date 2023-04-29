@@ -24,7 +24,18 @@ body {
   
   .btn {
     font-weight: 500;
+    display: inline-block;
+    padding: 1.70em 1em;
+    color: #F2E203;
+    border: 1px solid #F2E203;
+    text-align: center;
+  
+    
 
+  }
+
+  a {
+    text-decoration: none;
   }
 
    .menu-container {
@@ -97,6 +108,7 @@ body {
   min-height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 30px;
     
    }
 
@@ -107,6 +119,12 @@ body {
     background-color: none;
     min-width: 150px;
     font-size: 18px;
+   }
+
+   .section {
+    margin-top: 50px;
+
+
    }
 
 
@@ -121,22 +139,48 @@ body {
   }
 
   .card {
-    display: grid;
-    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 5%;
+    position: relative;
+  
   }
 
   .game-img {
-    max-width: 150px;
+    width: 150px;
+    margin-bottom: -50px;
+    
   }
 
-  .price {
+  .disc-price {
     font-size: 2rem;
     color: #F2E203;
+    margin-top: -50px;
+    margin-bottom: 0px;
+    
+    
+  }
+
+  .full-price {
+    color: aliceblue;
+    text-decoration: line-through;
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+  }
+
+ 
+
+ .price {
     background-color: #F8133C;
-    max-width: 80px;
-    padding: 5px;
-    border-radius: 10px;
-    position: absolute;
+    border-radius: 10%;
+    
+  } 
+
+  .price:hover {
+    background-color: #010326;
   }
 
    
