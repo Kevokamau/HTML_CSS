@@ -158,7 +158,6 @@ margin: 30px 0px 30px 0px;
    .title h2 {
     padding-right: 30px;
 
-
    }
    .icon {
 color: #F8133C;
@@ -220,14 +219,22 @@ font-size: 25px;
   }
 
   .sub-footer {
-gap: 20px;
+    /* justify-content: center;
+    justify-content: space-around; */
+    padding: 20px;
+    padding-bottom: 40px;
+    position: relative;
    background-color:#010326;
     color: aliceblue;
-    min-height: 200px;
+    min-height: 120px;
+   }
+
+.tags {
+  gap: 10px;
+   
    }
 
    .tag-btn {
-  
     color:antiquewhite ;
     display: inline-block;
     text-align: center;
@@ -241,6 +248,10 @@ gap: 20px;
     background-color: #174f42;
     font-weight: 600;
    }
+
+   /* .sub-footer h2 {
+    align-items: flex-start;
+   } */
 
 
 
@@ -279,6 +290,11 @@ gap: 20px;
        .container {
         flex-direction: row;
        }
+      }
+
+      .newsletter {
+
+        min-height: 300px;
       }
 
       /* MEDIA ENDS */
