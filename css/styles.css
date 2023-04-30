@@ -122,6 +122,13 @@ margin: 0px;
 
     }
 
+    /* .border {
+      padding-top: 100px;
+      margin-top: 30px;
+
+
+    } */
+
 
   .hero-img {
     background: linear-gradient(
@@ -156,6 +163,7 @@ margin: 0px;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
+  border-bottom: whitesmoke 5px solid;
 
    }
 
@@ -211,6 +219,10 @@ color: #F8133C;
 font-size: 25px;
 
 
+   }
+
+   .grey {
+    color: #696c753a;
    }
 
 
