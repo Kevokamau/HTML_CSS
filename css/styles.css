@@ -347,6 +347,8 @@ font-size: 25px;
     place-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
    
   }
 
@@ -434,6 +436,45 @@ font-size: 25px;
 
    }
 
+   .ft-img {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 10px;
+
+
+   }
+
+   .box {
+    background-color: #F3F3F3F5;
+    max-width: 400px;
+    align-content: center;
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: #F2E203 2px solid;
+
+   }
+
+   .success-txt {
+
+    text-align: center;
+
+
+   }
+
+   .success-txt h1 {
+
+    font-size: 50px;
+    color: #169A7C;
+    ;
+   }
+
 
 
    /* MIN MEDIA START ---THIS is rules for my nav */
@@ -508,9 +549,9 @@ font-size: 25px;
 
      }
 
-     .form-btn {
+     /* .form-btn {
       margin-left: 50px;
-     }
+     } */
 
      .search {
       display: none;
@@ -525,8 +566,7 @@ font-size: 25px;
 
      .row {
       flex-direction: column;
-      padding-top: 40px;
-      padding-bottom: 60px;
+      
     
     }
 
@@ -546,6 +586,8 @@ font-size: 25px;
 
 
     }
+
+  
 
   
 
