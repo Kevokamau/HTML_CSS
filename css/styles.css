@@ -29,6 +29,8 @@ margin: 0px;
     color: #F2E203;
     border: 1px solid #F2E203;
     text-align: center;
+    background-color: #F8133C;
+  
 
 
 
@@ -252,7 +254,7 @@ font-size: 25px;
 
    .container {
     justify-content: center;
-    padding: 1rem;
+    padding: 4rem;
     gap: 1rem;
   }
 
@@ -359,7 +361,7 @@ font-size: 25px;
   }
 
   .form {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     min-height: 50px;
     min-width: 300px;
     border-radius: 5px;
@@ -376,9 +378,29 @@ font-size: 25px;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 30px;
-
-    
+        
   }
+
+  .contact-btn {
+
+    display: flex;
+    place-items:center;
+    color: #010326;
+    font-size: 18px;
+   
+  }
+
+  .contact-btn h4 {
+
+  padding-left: 10px;
+  
+  }
+
+  .form-container {
+    padding-left: 50px;
+  }
+
+
 
   .c2a {
 
@@ -404,6 +426,8 @@ width: 300px
   
     border-left: #F2E203 solid 1px;
     border-right: #F2E203 solid 1px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
 
@@ -641,6 +665,7 @@ width: 300px
       border-right: none;
     }
   
+
 
   
 
