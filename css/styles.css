@@ -337,8 +337,14 @@ font-size: 25px;
    .item {
     flex: 50%;
     max-width: 400px;
+    text-align: center;
 
    }
+
+   /* .item h1 {
+    border-bottom: #F8133C 1px solid;
+    
+   } */
 
    .row {
 
@@ -366,7 +372,7 @@ font-size: 25px;
     min-width: 300px;
     border-radius: 5px;
     background-color: #e2e2e4;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     border: #949494 solid 1px;
     margin-bottom: 20px;
   
@@ -430,6 +436,89 @@ width: 300px
     padding-right: 10px;
   }
 
+  /* Table Rules */
+
+  table {
+
+    border-bottom:1px solid #010326;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+
+
+  }
+
+  th, td {
+    padding: 20px;
+    background-color: #94949447;
+    min-width: 60px;
+  }
+
+  tr {
+    border-bottom: #010326 solid 1px;
+  }
+
+  /* th:first-child {
+    background-color: #010326;
+    size: 200px;
+  } */
+
+  .table {
+
+    /* display: flex; */
+    /* place-items: center; */
+    justify-content: center;
+    gap: 50px;
+  
+    padding-bottom: 100px;
+
+
+  }
+
+  .game-detail {
+    padding-top: 30px;
+    text-align: center;
+  
+  }
+
+  .game-detail p {
+    font-size: 12px;
+    line-height: 5px;
+    color: #949494ef;
+  }
+
+  .game-detail h4 {
+    font-size: 20px;
+    line-height: 5px;
+    margin-bottom: 0px;
+  }
+
+  .line {
+    border-bottom: #F8133C 2px solid;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  /* End of table rules */
+
+  .cart {
+  
+    background-color: #b1a505ae;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: #010326 1px solid;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+  }
+
+  .cart-bg-color {
+
+    background-color: #ece5e5;
+  }
+
 
   .footer {
     display: flex;
@@ -483,6 +572,9 @@ width: 300px
 
     max-width: 200px;
     margin-bottom: -30px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 
    }
@@ -663,6 +755,11 @@ width: 300px
       border-bottom: #F2E203 solid 1px;
       border-left: none;
       border-right: none;
+    }
+
+    th, td {
+      padding: 10px;
+      width: 100%;
     }
   
 
