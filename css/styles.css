@@ -540,7 +540,7 @@ width: 300px
 
   .column {
     flex: 1;
-   
+   /* flex-direction: column; */
     margin: 2px;
     padding: 10px;
    text-align: center;
