@@ -13,23 +13,25 @@
   <body>
     <header class="header">
 
-        <div class=" menu-container">
+      <div class=" menu-container">
          
-          <a href="/index.html" ><img class="logo" src="/images/GameHub-logo-@2x.png" alt="GameHub logo"></a>
-          
-          <input type="search" class="search" placeholder="Search here">
-          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="hamburger-icon"> <i class="fa-sharp fa-solid fa-bars"></i></label>         
-          <nav class="nav">
-            <a href="/index.html">Home</a>
-            <a href="/shop.html">Shop</a>
-            <a href="/about.html">About us</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="/cart.html"><i class="fa-solid fa-user"></i></a>
-          </nav>     
-        </div>
+            
+        <a href="/index.html" ><img class="logo" src="/images/GameHub-logo-@2x.png" alt="GameHub logo"></a>
+        
+      <label class="label" for="search">Search here</label>
+      <input type="search" class="search" placeholder="Search here" id="search">
+      
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"> <p class="label">ham menu</p><i class="fa-sharp fa-solid fa-bars"></i></label>         
+      <nav class="nav">
+        <a href="/index.html">Home</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/about.html">About us</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/checkout.html"> <p class="label">checkout</p><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/cart.html"> <p class="label">cart</p><i class="fa-solid fa-user"></i></a>
+      </nav>     
+    </div>
 
         <div class="hero-img page-header"> 
           <div class="hero-text">
@@ -55,7 +57,8 @@
               <form action="/thanks.html">
                 <input type="email" id="email" name="email" class="form" placeholder="Email*" required>
                 <input type="text" id="name" name="customers name" class="form" placeholder="Your name*" required>
-                <textarea class="form" placeholder="Your Message" style="height: 200px;"></textarea>
+                <label class="label" for="message"> Your message</label>
+                <textarea class="form" placeholder="Your Message" id="message" style="height: 200px;"></textarea>
                 <input type="submit" class=" btn form-btn" value="Send Message">
             
         
@@ -106,12 +109,14 @@
     </div>
    
     <div class="form-container">
-      <h3>Newsletter</h3>
-      <form >
-        <input type="email" name="email" class="form" placeholder="Email*" required>
-        <input type="text" name="customers name" class="form" placeholder="Your name*" required>
+     
+     <form>
+        <h3>Newsletter</h3>
+        <label class="label" for="email" class="label">email </label>
+        <input type="email" name="email" class="form" placeholder="Email*" id="email" required>
+        <label class="label" for="name"> Your name</label>
+        <input type="text" name="customers name" class="form" placeholder="Your name*" id="name" required>
         <input type="submit" class="btn form-btn" value="Subscribe">
-      
     </form>
     
     </div>
