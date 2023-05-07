@@ -368,6 +368,18 @@ font-size: 25px;
     
   }
 
+  li {
+
+    list-style-type: none;
+  }
+
+  li a {
+
+    color: aliceblue;
+    line-height: 2;
+    
+  }
+
   .form {
     /* margin-left: 50px; */
     min-height: 50px;
